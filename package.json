@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is a roject that uses sass.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o dist/css/ --recursive"
+  },
+  "author": "Arhen Sabtiago\u001b[2~\u001b[2~\u001b[2~\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[a\u001b[B\u001b[n",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

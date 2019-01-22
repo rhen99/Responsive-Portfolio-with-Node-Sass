@@ -1,0 +1,20 @@
+$primary: #444;
+$text-color: #fff;
+$secondary: #eece1a;
+$show-the-image: true;
+$bg-image: url(../imgs/bg.jpg);
+$bg-opacity: 0.9;
+
+@mixin easeOut {
+	transition: all 0.5s ease-out;
+}
+@mixin background {
+	@if $show-the-image {
+		&#bg-image {
+			background: $bg-image;
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+}

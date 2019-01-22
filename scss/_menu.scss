@@ -9,7 +9,7 @@
 		width: 20px;
 		height: 3px;
 		margin: 0 0 5px 0;
-		background: $text-color;
+		background: set-text-color($primary);
 		@include easeOut;
 	}
 	&.close {
@@ -87,7 +87,7 @@
 			text-transform: uppercase;
 			padding: 1rem 0;
 			font-weight: 300;
-			color: $text-color;
+			color: set-text-color($primary);
 			text-decoration: none;
 			@include easeOut;
 			&:hover {

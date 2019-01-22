@@ -37,6 +37,10 @@
 			margin-bottom: 1rem;
 		}
 	}
+	.about-info {
+		grid-template-columns: 1fr;
+		grid-template-areas: 'image' 'bio' 'job1' 'job2' 'job3';
+	}
 }
 
 @include mediaSm {

@@ -90,6 +90,32 @@
 .nav-link:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  .nav-menu .nav-list,
+  .nav-menu .menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    .nav-menu .nav-list.show,
+    .nav-menu .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .nav-menu .nav-list {
+    height: 75vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px; }
+  .nav-menu .menu-branding {
+    height: 25vh;
+    transform: translate3d(-100%, 0, 0); }
+    .nav-menu .menu-branding .portrait {
+      width: 150px;
+      height: 150px; }
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
+
 * {
   box-sizing: border-box; }
 

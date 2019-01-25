@@ -1,10 +1,22 @@
 @include mediaXl {
+	.projects {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 @include mediaLg {
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @include mediaMd {
+	.boxes {
+		justify-content: center;
+	}
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.nav-menu {
 		.nav-list,
 		.menu-branding {
@@ -35,6 +47,8 @@
 		.lg-heading {
 			line-height: 1;
 			margin-bottom: 1rem;
+			font-size: 4rem;
+			text-align: center;
 		}
 	}
 	.about-info {
@@ -44,4 +58,7 @@
 }
 
 @include mediaSm {
+	.projects {
+		grid-template-columns: 1fr;
+	}
 }

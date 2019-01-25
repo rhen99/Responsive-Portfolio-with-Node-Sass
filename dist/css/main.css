@@ -90,7 +90,19 @@
 .nav-link:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
+  .boxes {
+    justify-content: center; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
   .nav-menu .nav-list,
   .nav-menu .menu-branding {
     float: none;
@@ -114,10 +126,16 @@
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      text-align: center; }
   .about-info {
     grid-template-columns: 1fr;
     grid-template-areas: 'image' 'bio' 'job1' 'job2' 'job3'; } }
+
+@media screen and (max-width: 500px) {
+  .projects {
+    grid-template-columns: 1fr; } }
 
 * {
   box-sizing: border-box; }
@@ -216,13 +234,77 @@ main {
   padding: 0.4rem;
   border-bottom: 3px solid #eece1a; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7em; }
+  .projects img {
+    width: 100%;
+    border: 3px solid #fff;
+    transition: all 0.5s ease-out; }
+    .projects img:hover {
+      opacity: 0.7;
+      border-color: #eece1a; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 1rem; }
+  .boxes div {
+    border: 3px solid #fff;
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    cursor: copy;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      background-color: #eece1a;
+      color: #222;
+      padding: 1rem 2rem; }
+      .boxes div:hover span {
+        color: #222; }
+    .boxes div input {
+      position: absolute;
+      left: -99999px; }
+
 #main-footer {
   text-align: center;
   height: 60px;
   background-color: #3c3c3c;
   padding: 1rem; }
 
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
+    background-color: #eece1a;
+    color: #222; }
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #444; }
+
+.btn-dark {
+  background-color: black;
+  color: #fff; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
+  .boxes {
+    justify-content: center; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
   .nav-menu .nav-list,
   .nav-menu .menu-branding {
     float: none;
@@ -246,7 +328,13 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      text-align: center; }
   .about-info {
     grid-template-columns: 1fr;
     grid-template-areas: 'image' 'bio' 'job1' 'job2' 'job3'; } }
+
+@media screen and (max-width: 500px) {
+  .projects {
+    grid-template-columns: 1fr; } }

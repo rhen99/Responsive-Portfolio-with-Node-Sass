@@ -1,3 +1,4 @@
+//Manipulate Nav Animation.
 const btn = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav-menu');
 const navList = document.querySelector('.nav-list');
@@ -25,3 +26,26 @@ function toggleBtn() {
 		showMenu = false;
 	}
 }
+
+//Inputs to copy
+const email = document.querySelector('#email');
+const number = document.querySelector('#number');
+const address = document.querySelector('#address');
+
+document.querySelector('.box1').addEventListener('click', () => {
+	email.select();
+	document.execCommand('copy');
+	alert('Copied');
+});
+
+document.querySelector('.box2').addEventListener('click', () => {
+	number.select();
+	document.execCommand('copy');
+	alert('Copied');
+});
+
+document.querySelector('.box3').addEventListener('click', () => {
+	address.select();
+	document.execCommand('copy');
+	alert('Copied');
+});
